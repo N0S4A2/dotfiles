@@ -38,6 +38,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'kien/ctrlp.vim' " fuzzy file finder
+
 NeoBundle 'Raimondi/delimitMate'
 let delimitMate_expand_cr=1
 
