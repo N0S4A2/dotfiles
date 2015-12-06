@@ -1,0 +1,33 @@
+[general]
+accounts = steveharris.sh
+pythonfile = ~/.offlineimap.py
+
+[Account steveharris.sh]
+localrepository = local
+remoterepository = remote
+autorefresh = 1
+quick = 4
+
+[Repository local]
+type = Maildir
+localfolders = ~/mail
+
+[Repository remote]
+type = IMAP
+remotehost = mail.messagingengine.com
+remoteport = 993
+remoteuser = steveharris@fastmail.com
+remotepasseval = get_pass()
+ssl = yes
+cert_fingerprint = 958b1601563aef92607a41eb5bad22e3cace8431
+holdconnectionopen = yes
+keepalive = 60
+folderfilter = lambda foldername: foldername in ["INBOX", "INBOX.Tickets"]
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(foldername)s"
+sep = " "
+footer = "\n"
