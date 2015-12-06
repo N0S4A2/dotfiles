@@ -1,0 +1,21 @@
+set sidebar_visible=yes
+set sidebar_width=15
+
+bind index,pager \<A-Up> sidebar-prev
+bind index,pager \<A-Down> sidebar-next
+bind index,pager \<A-Right> sidebar-open
+
+set mbox_type=Maildir
+set folder=~/mail
+set spoolfile=+INBOX
+source ~/.mutt/mailboxes
+
+set from="steve@steveharris.sh"
+set header_cache=~/.cache/mutt
+
+set mail_check=15
+set timeout=60
+
+set sort=threads
+set sort_browser=date
+set sort_aux=reverse-last-date-received
