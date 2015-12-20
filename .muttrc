@@ -1,9 +1,19 @@
 set sidebar_visible=yes
 set sidebar_width=15
+set sidebar_delim="│"
 
 bind index,pager \<A-Up> sidebar-prev
 bind index,pager \<A-Down> sidebar-next
 bind index,pager \<A-Right> sidebar-open
+
+set date_format="%m/%d %I:%M"
+set index_format=" %D %-20.20F %s"
+
+set status_format="%>─"
+
+color indicator green black
+color normal blue black
+color status white black
 
 set mbox_type=Maildir
 set folder=~/mail
@@ -14,7 +24,7 @@ set from="steve@steveharris.sh"
 set header_cache=~/.cache/mutt
 
 set mail_check=15
-set timeout=60
+set timeout=5
 
 set sort=threads
 set sort_browser=date
