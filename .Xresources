@@ -1,0 +1,33 @@
+xterm*borderWidth: 0
+xterm*boldMode: false
+xterm*allowBoldFonts: false
+xterm*faceName: EnvyCodeR:size=10:antialias=false
+xterm*boldFont: EnvyCodeR:size=10:antialias=false
+
+! sunburst color scheme
+*background: #000000
+*foreground: #ffffff
+! Black + DarkGrey
+*color0:  #000000
+*color8:  #484848
+! DarkRed + Red
+*color1:  #cf6a4c
+*color9:  #cf6a4c
+! DarkGreen + Green
+*color2:  #65b042
+*color10: #99cf50
+! DarkYellow + Yellow
+*color3:  #f1c40f
+*color11: #dad085
+! DarkBlue + Blue
+*color4:  #3387cc
+*color12: #3387cc
+! DarkMagenta + Magenta
+*color5:  #e28964
+*color13: #e28964
+!DarkCyan + Cyan
+*color6:  #89bdff
+*color14: #89bdff
+! LightGrey + White
+*color7:  #aeaeae
+*color15: #ffffff
