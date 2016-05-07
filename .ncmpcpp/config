@@ -30,7 +30,7 @@ mpd_host = "127.0.0.1"
 #
 mpd_port = "6600"
 #
-mpd_music_dir = "~/music"
+mpd_music_dir = "/media/music"
 #
 #mpd_connection_timeout = "5"
 #
@@ -254,7 +254,7 @@ mpd_music_dir = "~/music"
 ##   not available.
 ##
 #
-song_columns_list_format = "(20)[cyan]{a} (5f)[white]{y} (30)[green]{b} (3f)[white]{n} (40)[cyan]{t|f} (6f)[white]{lr}"
+song_columns_list_format = "(20)[blue]{a} (5f)[white]{y} (30)[green]{b} (3f)[white]{n} (40)[blue]{t|f} (6f)[white]{lr}"
 #
 ##### various settings #####
 #
@@ -463,7 +463,7 @@ header_window_color = "white"
 #
 #volume_color = "default"
 #
-state_line_color = "red"
+state_line_color = "magenta"
 #
 #state_flags_color = "default"
 #
@@ -475,7 +475,7 @@ color2 = "red"
 #
 #main_window_highlight_color = "yellow"
 #
-progressbar_color = "red"
+progressbar_color = "magenta"
 #
 #statusbar_color = "default"
 #
