@@ -9,6 +9,8 @@ setopt autopushd # automatically append directories to the directory stack
 setopt nocheckjobs # don't warn about background processes when exiting
 setopt nohup # don't kill background processes when exiting
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 stream() {
     INPUT_RES="1920x1200"
     OUTPUT_RES="1280x800"
