@@ -15,6 +15,8 @@ setopt nohup # don't kill background processes when exiting
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case-insensitive completion
+
 stream() {
     INPUT_RES="1920x1200"
     OUTPUT_RES="1280x800"
