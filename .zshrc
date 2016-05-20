@@ -4,8 +4,12 @@ compinit
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
 
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+
 setopt autocd # change directories without having to use cd
 setopt autopushd # automatically append directories to the directory stack
+setopt inc_append_history # automatically append every command to the history
 setopt nocheckjobs # don't warn about background processes when exiting
 setopt nohup # don't kill background processes when exiting
 
