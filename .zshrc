@@ -1,11 +1,14 @@
-autoload -U compinit
-compinit
+autoload -U compinit && compinit
+autoload -Uz colors && colors
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/.local/bin
 
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
+
+PROMPT="%{$fg[cyan]%}>%{$reset_color%} "
+RPROMPT="%{$fg[green]%}%~%{$reset_color%}"
 
 setopt autocd # change directories without having to use cd
 setopt autopushd # automatically append directories to the directory stack
