@@ -4,14 +4,17 @@ autoload -Uz colors && colors
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/.local/bin
 
-SAVEHIST=10000
 HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
 PROMPT="%{$fg[cyan]%}>%{$reset_color%} "
 RPROMPT="%{$fg[green]%}%~%{$reset_color%}"
 
 setopt autocd # change directories without having to use cd
 setopt autopushd # automatically append directories to the directory stack
+setopt hist_ignore_all_dups # do not append duplicate commands to the history
+setopt hist_ignore_space # do not append commands prefixed with a space to the history
 setopt inc_append_history # automatically append every command to the history
 setopt nocheckjobs # don't warn about background processes when exiting
 setopt nohup # don't kill background processes when exiting
