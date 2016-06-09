@@ -23,6 +23,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case-insensitive completion
 
+bindkey ';5C' forward-word # move the cursor to the beginning of the next word with Ctrl + Right Arrow
+bindkey ';5D' backward-word # move the cursor to the beginning of the previous word with Ctrl + Left Arrow
+
 stream() {
     INPUT_RES="1920x1200"
     OUTPUT_RES="1280x800"
