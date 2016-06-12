@@ -3,6 +3,7 @@ autoload -Uz colors && colors
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/.local/bin
+export EDITOR=vim
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
