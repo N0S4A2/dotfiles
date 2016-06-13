@@ -28,6 +28,8 @@ bindkey ';5C' forward-word # move the cursor to the beginning of the next word w
 bindkey ';5D' backward-word # move the cursor to the beginning of the previous word with Ctrl + Left Arrow
 bindkey "^[[H" beginning-of-line # move the cusor to the beginning of the line with Home
 bindkey "^[[F" end-of-line # move the cursor to the end of the line with End
+bindkey "^[[A" up-line-or-search # search for previous history entry with Up Arrow
+bindkey "^[[B" down-line-or-search # search for next history entry with Down Arrow
 
 stream() {
     INPUT_RES="1920x1200"
