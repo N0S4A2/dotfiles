@@ -26,6 +26,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case-insensitive com
 
 bindkey ';5C' forward-word # move the cursor to the beginning of the next word with Ctrl + Right Arrow
 bindkey ';5D' backward-word # move the cursor to the beginning of the previous word with Ctrl + Left Arrow
+bindkey "^[[H" beginning-of-line # move the cusor to the beginning of the line with Home
+bindkey "^[[F" end-of-line # move the cursor to the end of the line with End
 
 stream() {
     INPUT_RES="1920x1200"
