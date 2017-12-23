@@ -55,6 +55,6 @@ stream() {
 }
 
 twitch() {
-    livestreamer -p mpv twitch.tv/$1 best > /dev/null 2>&1 &
+    streamlink -p mpv twitch.tv/$1 best > /dev/null 2>&1 &
     exit
 }
