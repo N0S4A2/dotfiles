@@ -1,8 +1,10 @@
+Xcursor.size: 16
+
 xterm*borderWidth: 0
 xterm*boldMode: false
 xterm*allowBoldFonts: false
-xterm*faceName: EnvyCodeR:size=10:antialias=false
-xterm*boldFont: EnvyCodeR:size=10:antialias=false
+xterm*faceName: EnvyCodeR:size=9:antialias=false
+xterm*boldFont: EnvyCodeR:size=9:antialias=false
 
 ! sunburst color scheme
 *background: #000000
