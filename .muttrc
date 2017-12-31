@@ -1,6 +1,6 @@
 set sidebar_visible=yes
 set sidebar_width=15
-set sidebar_delim="│"
+set sidebar_divider_char="│"
 
 bind index,pager \<A-Up> sidebar-prev
 bind index,pager \<A-Down> sidebar-next
