@@ -1,0 +1,20 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#tabbrowser-tabs {
+    visibility: collapse !important;
+}
+
+#nav-bar {
+    visibility: collapse !important;
+}
+
+#navigator-toolbox {
+    visibility: collapse !important;
+}
+
+:-moz-any(#content, #appcontent) browser {
+    margin-right: -14px !important;
+    overflow-y: scroll;
+    margin-bottom: -14px !important;
+    overflow-x: scroll;
+}
