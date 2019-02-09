@@ -1,3 +1,5 @@
+xterm.termName: xterm-16color
+
 Xcursor.size: 16
 
 xterm*borderWidth: 0
@@ -7,29 +9,29 @@ xterm*faceName: EnvyCodeR:size=9:antialias=false
 xterm*boldFont: EnvyCodeR:size=9:antialias=false
 
 ! sunburst color scheme
-*background: #000000
-*foreground: #ffffff
+*background: #0c0c0c
+*foreground: #9d999e
 ! Black + DarkGrey
-*color0:  #000000
-*color8:  #484848
+*color0:  #0c0c0c
+*color8:  #5f5a60
 ! DarkRed + Red
-*color1:  #cf6a4c
-*color9:  #cf6a4c
+*color1: #7f5a2f
+*color9: #9b703f
 ! DarkGreen + Green
-*color2:  #65b042
-*color10: #99cf50
+*color2: #698857
+*color10: #8f9d6a
 ! DarkYellow + Yellow
-*color3:  #f1c40f
-*color11: #dad085
+*color3: #cda869
+*color11: #e9c062
 ! DarkBlue + Blue
-*color4:  #3387cc
-*color12: #3387cc
+*color4: #5573a3
+*color12: #5d90ba
 ! DarkMagenta + Magenta
-*color5:  #e28964
-*color13: #e28964
+*color5: #7f5a2f
+*color13: #9b703f
 !DarkCyan + Cyan
-*color6:  #89bdff
-*color14: #89bdff
+*color6:  #5573a3
+*color14: #5d90ba
 ! LightGrey + White
-*color7:  #aeaeae
-*color15: #ffffff
+*color7:  #5f5a60
+*color15: #9d999e
