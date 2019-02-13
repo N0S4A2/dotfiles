@@ -5,12 +5,14 @@ autoload -Uz colors && colors
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/.local/bin
 export EDITOR=vim
 
+alias ls='exa -l'
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
 PROMPT="%{$fg[cyan]%}>%{$reset_color%} "
-RPROMPT="%{$fg[green]%}%~%{$reset_color%}"
+#RPROMPT="%{$fg[green]%}%~%{$reset_color%}"
 
 setopt autocd # change directories without having to use cd
 setopt autopushd # automatically append directories to the directory stack
@@ -21,6 +23,7 @@ setopt nocheckjobs # don't warn about background processes when exiting
 setopt nohup # don't kill background processes when exiting
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case-insensitive completion
 
@@ -28,8 +31,24 @@ bindkey ';5C' forward-word # move the cursor to the beginning of the next word w
 bindkey ';5D' backward-word # move the cursor to the beginning of the previous word with Ctrl + Left Arrow
 bindkey "^[[H" beginning-of-line # move the cusor to the beginning of the line with Home
 bindkey "^[[F" end-of-line # move the cursor to the end of the line with End
-bindkey "^[[A" up-line-or-search # search for previous history entry with Up Arrow
-bindkey "^[[B" down-line-or-search # search for next history entry with Down Arrow
+#bindkey "^[[A" up-line-or-search # search for previous history entry with Up Arrow
+#bindkey "^[[B" down-line-or-search # search for next history entry with Down Arrow
+bindkey "^[[A" history-substring-search-up # search for previous history entry with Up Arrow
+bindkey "^[[B" history-substring-search-down # search for next history entry with Down Arrow
+bindkey '^R' history-incremental-search-backward
+
+play() {
+    mpv ytdl://ytsearch:"$@" --load-unsafe-playlists &
+    exit
+}
+
+random_artist() {
+    find /media/music -maxdepth 1 -type d | sort --random-sort | head -n 1 | sed 's/.*\///g'
+}
+
+song() {
+    ncmpcpp --current-song='%a - %t' 2> /dev/null && echo
+}
 
 stream() {
     INPUT_RES="1920x1200"
@@ -57,4 +76,10 @@ stream() {
 twitch() {
     streamlink -p mpv twitch.tv/$1 best > /dev/null 2>&1 &
     exit
+}
+
+weather() {
+    curl -s -A "Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0" http://thefuckingweather.com/Where/98122 | \
+        grep 'remark ' | \
+        sed 's/\(.*<.*">\|<\/.*>\)//g'
 }
