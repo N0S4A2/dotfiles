@@ -9,7 +9,7 @@ set incsearch
 set nobackup
 set noswapfile
 set nowritebackup
-set number              " display line numbers
+" set number              " display line numbers
 set pastetoggle=<F2>    " toggle paste mode in insert mode
 set shiftwidth=4
 set showmatch
@@ -17,7 +17,16 @@ set smartcase
 set softtabstop=4
 set tabstop=4
 
+set laststatus=0
+set noshowcmd
+set shortmess=F
+set noruler
+set noshowmode
+
 set t_Co=256
+
+" cnoremap w execute 'silent write'
+" cnoremap wq execute 'write quit'
 
 syntax on
 
@@ -37,6 +46,8 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'rust-lang/rust.vim'
 
 NeoBundle 'kien/ctrlp.vim' " fuzzy file finder
 
