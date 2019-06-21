@@ -295,7 +295,7 @@ song_columns_list_format = "(20)[blue]{a} (5f)[white]{y} (30)[green]{b} (3f)[whi
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-progressbar_look = ">>"
+progressbar_look = "──"
 #
 #default_place_to_search_in = "database" (database/playlist)
 #
