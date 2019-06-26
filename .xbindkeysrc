@@ -1,3 +1,9 @@
+# Use dmenu to search for an album to add to the mpd queue and play
+# This is gross, but I can't figure out a way to load zsh aliases / functions when running xbindkeys
+"mpc clear; mpc list artist | dmenu -fn 'xos4 Terminus-8' -nb '#0c0c0c' -sb '#5f5a60' -i | xargs -d '\n' mpc list album artist | dmenu -fn 'xos4 Terminus-8' -nb '#0c0c0c' -sb '#5f5a60' -i | xargs -d '\n' mpc find album | mpc add; mpc play >/dev/null 2>&1"
+    m:0x40 + c:58
+    Mod4 + m
+
 # Case-insensitive password search
 "passmenu -fn 'xos4 Terminus-8' -nb '#0c0c0c' -sb '#5f5a60' -i"
     m:0x40 + c:33

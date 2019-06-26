@@ -5,6 +5,7 @@ autoload -Uz colors && colors
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/.local/bin
 export EDITOR=vim
 
+alias dmenu="dmenu -fn 'xos4 Terminus-8' -nb '#0c0c0c' -sb '#5f5a60' -i"
 alias ls='exa -l'
 
 HISTFILE=~/.zsh_history
@@ -36,6 +37,13 @@ bindkey "^[[F" end-of-line # move the cursor to the end of the line with End
 bindkey "^[[A" history-substring-search-up # search for previous history entry with Up Arrow
 bindkey "^[[B" history-substring-search-down # search for next history entry with Down Arrow
 bindkey '^R' history-incremental-search-backward
+
+# Use dmenu to search for an album to add to the mpd queue and play
+mpdmenu() {
+    mpc clear
+    mpc list artist | dmenu | xargs -d '\n' mpc list album artist | dmenu | xargs -d '\n' mpc find album | mpc add
+    mpc play >/dev/null 2>&1
+}
 
 play() {
     mpv ytdl://ytsearch:"$@" --load-unsafe-playlists &
