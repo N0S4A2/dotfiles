@@ -5,7 +5,9 @@ Xcursor.size: 16
 xterm*borderWidth: 0
 xterm*boldMode: false
 xterm*allowBoldFonts: false
-xterm*faceName: EnvyCodeR:size=9:antialias=false
+!xterm*faceName: EnvyCodeR:size=9:antialias=false
+!xterm.font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-iso10646-1
+xterm*faceName: xos4 Terminus:style=Regular:size=8:antialias=false
 xterm*boldFont: EnvyCodeR:size=9:antialias=false
 
 ! sunburst color scheme
@@ -27,8 +29,10 @@ xterm*boldFont: EnvyCodeR:size=9:antialias=false
 !*color11: #ffd56a
 *color11: #cfb36e
 ! DarkBlue + Blue
-*color4: #5573a3
-*color12: #5d90ba
+!*color4: #5573a3
+!*color12: #5d90ba
+*color4: #5f819d
+*color12: #81a2be
 ! DarkMagenta + Magenta
 *color5: #7f5a2f
 !*color5: #8447c0
