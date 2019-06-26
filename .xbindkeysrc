@@ -1,0 +1,4 @@
+# Case-insensitive password search
+"passmenu -fn 'xos4 Terminus-8' -nb '#0c0c0c' -sb '#5f5a60' -i"
+    m:0x40 + c:33
+    Mod4 + p
