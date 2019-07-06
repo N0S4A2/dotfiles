@@ -1,0 +1,4 @@
+set default-bg "#0c0c0c"
+set default-fg "#9d999e"
+set font "xos4 Terminus normal 8"
+set guioptions ""
