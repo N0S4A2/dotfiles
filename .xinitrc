@@ -1,5 +1,10 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-xrandr -r 144
 xbindkeys
-exec i3 
+xrandr -r 144
+xsetroot -solid "#707880"
+
+mpd
+redshift -l 47.609722:-122.333056 &
+
+exec dwm 
