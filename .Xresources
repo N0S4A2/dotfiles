@@ -17,30 +17,20 @@ xterm*boldFont: EnvyCodeR:size=9:antialias=false
 *color0:  #0c0c0c
 *color8:  #5f5a60
 ! DarkRed + Red
-*color1: #7f5a2f
-!*color9: #9b703f
-*color9: #ae8453
+*color1: #5f5a60
+*color9: #9d999e
 ! DarkGreen + Green
-*color2: #698857
-*color10: #8f9d6a
+*color2: #5f819d
+*color10: #81a2be
 ! DarkYellow + Yellow
 *color3: #cda869
-!*color11: #e9c062
-!*color11: #ffd56a
 *color11: #cfb36e
 ! DarkBlue + Blue
-!*color4: #5573a3
-!*color12: #5d90ba
 *color4: #5f819d
 *color12: #81a2be
 ! DarkMagenta + Magenta
-*color5: #7f5a2f
-!*color5: #8447c0
-!*color5: #723da6
-!*color5: #6c3a9d
-!*color5: #72479d
-*color13: #ae8453
-!*color13: #b185dc
+*color5: #5f5a60
+*color13: #9d999e
 !DarkCyan + Cyan
 *color6:  #5573a3
 *color14: #5d90ba
