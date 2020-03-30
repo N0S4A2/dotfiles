@@ -254,7 +254,7 @@ mpd_music_dir = "/media/music"
 ##   not available.
 ##
 #
-song_columns_list_format = "(20)[blue]{a} (5f)[white]{y} (30)[green]{b} (3f)[white]{n} (40)[blue]{t|f} (6f)[white]{lr}"
+song_columns_list_format = "(20)[blue]{a} (5f)[white]{y} (30)[blue]{b} (3f)[white]{n} (40)[blue]{t|f} (6f)[white]{lr}"
 #
 ##### various settings #####
 #
@@ -463,7 +463,7 @@ header_window_color = "white"
 #
 #volume_color = "default"
 #
-state_line_color = "magenta"
+state_line_color = "white"
 #
 #state_flags_color = "default"
 #
@@ -475,7 +475,7 @@ color2 = "red"
 #
 #main_window_highlight_color = "yellow"
 #
-progressbar_color = "magenta"
+progressbar_color = "white"
 #
 #statusbar_color = "default"
 #
