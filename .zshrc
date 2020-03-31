@@ -82,7 +82,7 @@ stream() {
 }
 
 twitch() {
-    streamlink -p mpv twitch.tv/$1 best > /dev/null 2>&1 &
+    streamlink -p mpv twitch.tv/$1 best --twitch-oauth-token=$(pass Twitch | awk '/twitch_oauth_token/ {print $2}') > /dev/null 2>&1 &
     exit
 }
 
